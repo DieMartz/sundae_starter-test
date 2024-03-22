@@ -1,4 +1,2 @@
-export const pricePerItem = {
-    scoops: 2,
-    toppings: 1.5,
-  };
+export { nombrePaginas } from './pages.js'
+export { pricePerItem } from './prizes.js'

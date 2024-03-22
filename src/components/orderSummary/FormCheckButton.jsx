@@ -2,9 +2,15 @@ import React, { useState } from 'react'
 import { Button, Form, OverlayTrigger } from "react-bootstrap";
 import Popover from 'react-bootstrap/Popover';
 
-export default function FormCheckButton() {
+export default function FormCheckButton( { setOrderPhase } ) {
 
     const [confirmButtonState, setConfirmButtonState] = useState( false );
+
+
+    const handleClick = ( e ) => {
+        e.preventDefault();
+        setOrderPhase( "completed" )
+    }
 
 
     const popover = (
@@ -34,7 +40,7 @@ export default function FormCheckButton() {
                     label={checkboxLabel}
                 />
             </Form.Group>
-            <Button variant="primary" type="submit" disabled={!confirmButtonState}>
+            <Button variant="primary" type="submit" disabled={!confirmButtonState} onClick={handleClick}>
                 Confirm Order
             </Button>
         </Form>
