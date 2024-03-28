@@ -7,12 +7,16 @@ import Button from "react-bootstrap/Button";
 export default function OrderEntry( { setOrderPhase } ) {
 
     const { totals } = useOrderDetails();
+
+    const isEnabled = totals.scoops === 0; 
+
+
     return (
         <div>
             <Options optionType="scoops"/>
             <Options optionType="toppings"/>
             <h2>Grand total: {formatCurrency( totals.scoops + totals.toppings )} </h2>
-            <Button onClick={() => setOrderPhase( "review" )}>Order Sundae!</Button>
+            <Button onClick={() => setOrderPhase( "review" )} disabled={isEnabled} >Order Sundae!</Button>
         </div>
     );
 }
