@@ -36,7 +36,7 @@ pipeline {
     }
     post {
         always {
-            junit skipMarkingBuildUnstable: true, testResults: 'test-results/*.xml'
+            junit 'build/reports/**/*.xml'
         }
     }
 }
