@@ -43,9 +43,9 @@ pipeline {
             steps {
                 sh '''
                     npm i serve
-                    node_modules/.bin/serve -s dist &
+                    node_modules/.bin/serve dist &
                     sleep 10
-                    npx playwright test --headed
+                    npx playwright test
                 '''
             }
         }
