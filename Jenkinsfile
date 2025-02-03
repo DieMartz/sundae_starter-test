@@ -33,10 +33,26 @@ pipeline {
                 '''
             }
         }
+        stage('E2E') {
+            agent {
+                docker {
+                    image 'mcr.microsoft.com/playwright:v1.46.0-noble'
+                    reuseNode true
+                }
+            }
+            steps {
+                sh '''
+                    npm i serve
+                    node_modules/.bin/serve -s dist &
+                    sleep 10
+                    npx playwright test --headed
+                '''
+            }
+        }
     }
     post {
         always {
-            junit skipMarkingBuildUnstable: true, allowEmptyResults: true, testResults: '**/test-results/*.xml'
+            junit skipMarkingBuildUnstable: true, allowEmptyResults: true, testResults: '**/vitest-results/*.xml'
         }
     }
 }

@@ -18,6 +18,6 @@ export default defineConfig({
     // I'm leaving it in here becasue often people want to parse CSS in tests.
     css: true,
     reporters: ["junit"],
-    outputFile: "./test-results/junit-report.xml",
+    outputFile: "./vitest-results/junit-report.xml",
   },
 });
