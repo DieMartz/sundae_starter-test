@@ -2,7 +2,7 @@ import React from "react";
 import Options from "./Options";
 import { useOrderDetails } from "../../context/OderDetails";
 import { formatCurrency } from "../../utilities";
-import { Button } from "./node_modules/react-bootstrap";
+import { Button } from "react-bootstrap";
 
 export default function OrderEntry({ setOrderPhase }) {
   const { totals } = useOrderDetails();
