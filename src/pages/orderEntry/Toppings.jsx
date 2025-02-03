@@ -1,11 +1,10 @@
-import Col from "react-bootstrap/Col";
-import Form from 'react-bootstrap/Form'
+import { Col, Form } from "react-bootstrap";
 import { useOrderDetails } from "../../context/OderDetails";
 export default function Toppings({ name, imagePath }) {
-
   const { updateItemCount } = useOrderDetails();
 
-  const handleChange = (e) => updateItemCount(name, e.target.checked ? 1 : 0, "toppings");
+  const handleChange = (e) =>
+    updateItemCount(name, e.target.checked ? 1 : 0, "toppings");
 
   return (
     <Col xs={12} sm={6} md={4} lg={3} style={{ textAlign: "center" }}>
@@ -15,10 +14,8 @@ export default function Toppings({ name, imagePath }) {
         alt={`${name} topping`}
       />
       <Form.Group controlId={`${name}-toppings-checkbox`}>
-        <Form.Check type="checkbox" onChange={handleChange} label={name}/>
+        <Form.Check type="checkbox" onChange={handleChange} label={name} />
       </Form.Group>
-      
     </Col>
-
   );
 }
