@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-import Button from "react-bootstrap/Button";
 import { useOrderDetails } from "../../context/OderDetails";
 import Spinner from "react-bootstrap/Spinner";
 import AlertBanner from "../../components/general/AlertBanner";
+import { Button } from "react-bootstrap";
 
 export default function OrderConfirmation({ setOrderPhase }) {
   const { resetOrder } = useOrderDetails();
