@@ -27,3 +27,9 @@ dist-ssr
 # reporters
 test-results.json
 test-results/**
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

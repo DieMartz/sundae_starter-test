@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="18" failures="0" errors="0" time="9.665">
+    <testsuite name="src/vitest/entry/Options.test.jsx" timestamp="2025-02-04T04:05:04.096Z" hostname="DESKTOP-8UQJ3AE" tests="3" failures="0" errors="0" skipped="0" time="0.613">
+        <testcase classname="src/vitest/entry/Options.test.jsx" name="displays image for each scoop option from server" time="0.127">
+            <system-out>
+heading:
+
+Name &quot;Scoops&quot;:
+[36m&lt;h2 /&gt;[39m
+
+--------------------------------------------------
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/vitest/entry/Options.test.jsx" name="displays each Toppings in Screen" time="0.056">
+        </testcase>
+        <testcase classname="src/vitest/entry/Options.test.jsx" name="spinButton add class ionvalid when a no valid input" time="0.427">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/vitest/entry/OrderEntry.test.jsx" timestamp="2025-02-04T04:05:04.100Z" hostname="DESKTOP-8UQJ3AE" tests="2" failures="0" errors="0" skipped="0" time="0.267">
+        <testcase classname="src/vitest/entry/OrderEntry.test.jsx" name="handles error for scoops and toppings routes" time="0.159">
+            <system-out>
+alert:
+
+Name &quot;&quot;:
+[36m&lt;div[39m
+  [33mclass[39m=[32m&quot;fade alert alert-danger show&quot;[39m
+  [33mrole[39m=[32m&quot;alert&quot;[39m
+  [33mstyle[39m=[32m&quot;background-color: red;&quot;[39m
+[36m/&gt;[39m
+
+Name &quot;&quot;:
+[36m&lt;div[39m
+  [33mclass[39m=[32m&quot;fade alert alert-danger show&quot;[39m
+  [33mrole[39m=[32m&quot;alert&quot;[39m
+  [33mstyle[39m=[32m&quot;background-color: red;&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+heading:
+
+Name &quot;Grand total: $0.00&quot;:
+[36m&lt;h2 /&gt;[39m
+
+--------------------------------------------------
+button:
+
+Name &quot;Order Sundae!&quot;:
+[36m&lt;button[39m
+  [33mclass[39m=[32m&quot;btn btn-primary&quot;[39m
+  [33mdisabled[39m=[32m&quot;&quot;[39m
+  [33mtype[39m=[32m&quot;button&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;div&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;fade alert alert-danger show&quot;[39m
+        [33mrole[39m=[32m&quot;alert&quot;[39m
+        [33mstyle[39m=[32m&quot;background-color: red;&quot;[39m
+      [36m&gt;[39m
+        [0mAn unexpected error ocurred. Please try again later.[0m
+      [36m&lt;/div&gt;[39m
+      [36m&lt;div[39m
+        [33mclass[39m=[32m&quot;fade alert alert-danger show&quot;[39m
+        [33mrole[39m=[32m&quot;alert&quot;[39m
+        [33mstyle[39m=[32m&quot;background-color: red;&quot;[39m
+      [36m&gt;[39m
+        [0mAn unexpected error ocurred. Please try again later.[0m
+      [36m&lt;/div&gt;[39m
+      [36m&lt;h2&gt;[39m
+        [0mGrand total: [0m
+        [0m$0.00[0m
+        [0m [0m
+      [36m&lt;/h2&gt;[39m
+      [36m&lt;button[39m
+        [33mclass[39m=[32m&quot;btn btn-primary&quot;[39m
+        [33mdisabled[39m=[32m&quot;&quot;[39m
+        [33mtype[39m=[32m&quot;button&quot;[39m
+      [36m&gt;[39m
+        [0mOrder Sundae![0m
+      [36m&lt;/button&gt;[39m
+    [36m&lt;/div&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/body&gt;[39m
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/vitest/entry/OrderEntry.test.jsx" name="Disables the Order button if any scoops are selected" time="0.105">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/vitest/entry/TotalUpdates.test.jsx" timestamp="2025-02-04T04:05:04.103Z" hostname="DESKTOP-8UQJ3AE" tests="6" failures="0" errors="0" skipped="0" time="1.327">
+        <testcase classname="src/vitest/entry/TotalUpdates.test.jsx" name="update scoop subtotal when scoops change" time="0.345">
+        </testcase>
+        <testcase classname="src/vitest/entry/TotalUpdates.test.jsx" name="update total Amount for toppings" time="0.243">
+        </testcase>
+        <testcase classname="src/vitest/entry/TotalUpdates.test.jsx" name="grand Total &gt; grand total starts" time="0.017">
+        </testcase>
+        <testcase classname="src/vitest/entry/TotalUpdates.test.jsx" name="grand Total &gt; grand total updates properly if scoop is added first" time="0.185">
+        </testcase>
+        <testcase classname="src/vitest/entry/TotalUpdates.test.jsx" name="grand Total &gt; grand total updates properly if topping is added first" time="0.256">
+        </testcase>
+        <testcase classname="src/vitest/entry/TotalUpdates.test.jsx" name="grand Total &gt; grand total updates properly if item is removed" time="0.277">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/vitest/orderConfirmation/OrderConfirmation.test.jsx" timestamp="2025-02-04T04:05:04.107Z" hostname="DESKTOP-8UQJ3AE" tests="1" failures="0" errors="0" skipped="0" time="0.237">
+        <testcase classname="src/vitest/orderConfirmation/OrderConfirmation.test.jsx" name="Obtains a Order number for a service" time="0.234">
+            <system-out>
+status:
+
+Name &quot;&quot;:
+[36m&lt;div[39m
+  [33mclass[39m=[32m&quot;spinner-border text-border&quot;[39m
+  [33mrole[39m=[32m&quot;status&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+
+heading:
+
+Name &quot;Thank you!&quot;:
+[36m&lt;h1 /&gt;[39m
+
+Name &quot;Your order Number is: `$5`&quot;:
+[36m&lt;h2 /&gt;[39m
+
+--------------------------------------------------
+button:
+
+Name &quot;Create new order&quot;:
+[36m&lt;button[39m
+  [33mclass[39m=[32m&quot;btn btn-primary&quot;[39m
+  [33mtype[39m=[32m&quot;submit&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/vitest/orderSummary/FormCheckButton.test.jsx" timestamp="2025-02-04T04:05:04.109Z" hostname="DESKTOP-8UQJ3AE" tests="4" failures="0" errors="0" skipped="0" time="0.4">
+        <testcase classname="src/vitest/orderSummary/FormCheckButton.test.jsx" name="Summary Form Interactions and Components &gt; Button Exist in Page" time="0.094">
+        </testcase>
+        <testcase classname="src/vitest/orderSummary/FormCheckButton.test.jsx" name="Summary Form Interactions and Components &gt; Initial State for the Components" time="0.028">
+        </testcase>
+        <testcase classname="src/vitest/orderSummary/FormCheckButton.test.jsx" name="Summary Form Interactions and Components &gt; Button enabled If CheckBox is Pressed and Second Click Button Disabled" time="0.165">
+        </testcase>
+        <testcase classname="src/vitest/orderSummary/FormCheckButton.test.jsx" name="Summary Form Interactions and Components &gt; Popover responds to hover" time="0.11">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/vitest/phases/orderPhase.test.jsx" timestamp="2025-02-04T04:05:04.112Z" hostname="DESKTOP-8UQJ3AE" tests="2" failures="0" errors="0" skipped="0" time="1.164">
+        <testcase classname="src/vitest/phases/orderPhase.test.jsx" name="order phase for Happy Path" time="0.847">
+            <system-out>
+heading:
+
+Name &quot;Scoops&quot;:
+[36m&lt;h2 /&gt;[39m
+
+Name &quot;Toppings&quot;:
+[36m&lt;h2 /&gt;[39m
+
+Name &quot;Grand total: $0.00&quot;:
+[36m&lt;h2 /&gt;[39m
+
+--------------------------------------------------
+button:
+
+Name &quot;Order Sundae!&quot;:
+[36m&lt;button[39m
+  [33mclass[39m=[32m&quot;btn btn-primary&quot;[39m
+  [33mdisabled[39m=[32m&quot;&quot;[39m
+  [33mtype[39m=[32m&quot;button&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+
+heading:
+
+Name &quot;OrderSummary&quot;:
+[36m&lt;h1 /&gt;[39m
+
+Name &quot;Scoops: $2.00&quot;:
+[36m&lt;h2 /&gt;[39m
+
+Name &quot;Toppings: $1.50&quot;:
+[36m&lt;h2 /&gt;[39m
+
+Name &quot;Grand total: $3.50&quot;:
+[36m&lt;h2 /&gt;[39m
+
+--------------------------------------------------
+list:
+
+Name &quot;&quot;:
+[36m&lt;ul /&gt;[39m
+
+Name &quot;&quot;:
+[36m&lt;ul /&gt;[39m
+
+--------------------------------------------------
+checkbox:
+
+Name &quot;I agree to Terms and Conditions&quot;:
+[36m&lt;input[39m
+  [33mclass[39m=[32m&quot;form-check-input&quot;[39m
+  [33mid[39m=[32m&quot;terms-and-conditions&quot;[39m
+  [33mtype[39m=[32m&quot;checkbox&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+button:
+
+Name &quot;Confirm Order&quot;:
+[36m&lt;button[39m
+  [33mclass[39m=[32m&quot;btn btn-primary&quot;[39m
+  [33mdisabled[39m=[32m&quot;&quot;[39m
+  [33mtype[39m=[32m&quot;submit&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+
+status:
+
+Name &quot;&quot;:
+[36m&lt;div[39m
+  [33mclass[39m=[32m&quot;spinner-border text-border&quot;[39m
+  [33mrole[39m=[32m&quot;status&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+
+heading:
+
+Name &quot;Thank you!&quot;:
+[36m&lt;h1 /&gt;[39m
+
+Name &quot;Your order Number is: `$5`&quot;:
+[36m&lt;h2 /&gt;[39m
+
+--------------------------------------------------
+button:
+
+Name &quot;Create new order&quot;:
+[36m&lt;button[39m
+  [33mclass[39m=[32m&quot;btn btn-primary&quot;[39m
+  [33mtype[39m=[32m&quot;submit&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;div[39m
+      [33mclass[39m=[32m&quot;container&quot;[39m
+    [36m&gt;[39m
+      [36m&lt;div&gt;[39m
+        [36m&lt;h2&gt;[39m
+          [0mScoops[0m
+        [36m&lt;/h2&gt;[39m
+        [36m&lt;p&gt;[39m
+          [0m$2.00[0m
+          [0m each[0m
+        [36m&lt;/p&gt;[39m
+        [36m&lt;p&gt;[39m
+          [0mScoops[0m
+          [0m total: [0m
+          [0m$0.00[0m
+        [36m&lt;/p&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;row&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;col-lg-3 col-md-4 col-sm-6 col-12&quot;[39m
+            [33mstyle[39m=[32m&quot;text-align: center;&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;img[39m
+              [33malt[39m=[32m&quot;Chocolate scoop&quot;[39m
+              [33msrc[39m=[32m&quot;http://localhost:3030//images/chocolate.png&quot;[39m
+              [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+            [36m/&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;row&quot;[39m
+              [33mstyle[39m=[32m&quot;margin-top: 10px;&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;label[39m
+                [33mclass[39m=[32m&quot;form-label col-form-label col-form-label-6 col&quot;[39m
+                [33mfor[39m=[32m&quot;Chocolate-count&quot;[39m
+                [33mstyle[39m=[32m&quot;text-align: right;&quot;[39m
+              [36m&gt;[39m
+                [0mChocolate[0m
+              [36m&lt;/label&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;col-5&quot;[39m
+                [33mstyle[39m=[32m&quot;text-align: left;&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;form-control&quot;[39m
+                  [33mid[39m=[32m&quot;Chocolate-count&quot;[39m
+                  [33mtype[39m=[32m&quot;number&quot;[39m
+                  [33mvalue[39m=[32m&quot;0&quot;[39m
+                [36m/&gt;[39m
+              [36m&lt;/div&gt;[39m
+            [36m&lt;/div&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;col-lg-3 col-md-4 col-sm-6 col-12&quot;[39m
+            [33mstyle[39m=[32m&quot;text-align: center;&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;img[39m
+              [33malt[39m=[32m&quot;Vanilla scoop&quot;[39m
+              [33msrc[39m=[32m&quot;http://localhost:3030//images/vanilla.png&quot;[39m
+              [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+            [36m/&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;row&quot;[39m
+              [33mstyle[39m=[32m&quot;margin-top: 10px;&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;label[39m
+                [33mclass[39m=[32m&quot;form-label col-form-label col-form-label-6 col&quot;[39m
+                [33mfor[39m=[32m&quot;Vanilla-count&quot;[39m
+                [33mstyle[39m=[32m&quot;text-align: right;&quot;[39m
+              [36m&gt;[39m
+                [0mVanilla[0m
+              [36m&lt;/label&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;col-5&quot;[39m
+                [33mstyle[39m=[32m&quot;text-align: left;&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;form-control&quot;[39m
+                  [33mid[39m=[32m&quot;Vanilla-count&quot;[39m
+                  [33mtype[39m=[32m&quot;number&quot;[39m
+                  [33mvalue[39m=[32m&quot;0&quot;[39m
+                [36m/&gt;[39m
+              [36m&lt;/div&gt;[39m
+            [36m&lt;/div&gt;[39m
+          [36m&lt;/div&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;h2&gt;[39m
+          [0mToppings[0m
+        [36m&lt;/h2&gt;[39m
+        [36m&lt;p&gt;[39m
+          [0m$1.50[0m
+          [0m each[0m
+        [36m&lt;/p&gt;[39m
+        [36m&lt;p&gt;[39m
+          [0mToppings[0m
+          [0m total: [0m
+          [0m$0.00[0m
+        [36m&lt;/p&gt;[39m
+        [36m&lt;div[39m
+          [33mclass[39m=[32m&quot;row&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;col-lg-3 col-md-4 col-sm-6 col-12&quot;[39m
+            [33mstyle[39m=[32m&quot;text-align: center;&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;img[39m
+              [33malt[39m=[32m&quot;Cherries topping&quot;[39m
+              [33msrc[39m=[32m&quot;http://localhost:3030//images/cherries.png&quot;[39m
+              [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+            [36m/&gt;[39m
+            [36m&lt;div&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;form-check&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;form-check-input&quot;[39m
+                  [33mid[39m=[32m&quot;Cherries-toppings-checkbox&quot;[39m
+                  [33mtype[39m=[32m&quot;checkbox&quot;[39m
+                [36m/&gt;[39m
+                [36m&lt;label[39m
+                  [33mclass[39m=[32m&quot;form-check-label&quot;[39m
+                  [33mfor[39m=[32m&quot;Cherries-toppings-checkbox&quot;[39m
+                  [33mtitle[39m=[32m&quot;&quot;[39m
+                [36m&gt;[39m
+                  [0mCherries[0m
+                [36m&lt;/label&gt;[39m
+              [36m&lt;/div&gt;[39m
+            [36m&lt;/div&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;col-lg-3 col-md-4 col-sm-6 col-12&quot;[39m
+            [33mstyle[39m=[32m&quot;text-align: center;&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;img[39m
+              [33malt[39m=[32m&quot;M&amp;Ms topping&quot;[39m
+              [33msrc[39m=[32m&quot;http://localhost:3030//images/m-and-ms.png&quot;[39m
+              [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+            [36m/&gt;[39m
+            [36m&lt;div&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;form-check&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;form-check-input&quot;[39m
+                  [33mid[39m=[32m&quot;M&amp;Ms-toppings-checkbox&quot;[39m
+                  [33mtype[39m=[32m&quot;checkbox&quot;[39m
+                [36m/&gt;[39m
+                [36m&lt;label[39m
+                  [33mclass[39m=[32m&quot;form-check-label&quot;[39m
+                  [33mfor[39m=[32m&quot;M&amp;Ms-toppings-checkbox&quot;[39m
+                  [33mtitle[39m=[32m&quot;&quot;[39m
+                [36m&gt;[39m
+                  [0mM&amp;Ms[0m
+                [36m&lt;/label&gt;[39m
+              [36m&lt;/div&gt;[39m
+            [36m&lt;/div&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;div[39m
+            [33mclass[39m=[32m&quot;col-lg-3 col-md-4 col-sm-6 col-12&quot;[39m
+            [33mstyle[39m=[32m&quot;text-align: center;&quot;[39m
+          [36m&gt;[39m
+            [36m&lt;img[39m
+              [33malt[39m=[32m&quot;Hot fudge topping&quot;[39m
+              [33msrc[39m=[32m&quot;http://localhost:3030//images/hot-fudge.png&quot;[39m
+              [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+            [36m/&gt;[39m
+            [36m&lt;div&gt;[39m
+              [36m&lt;div[39m
+                [33mclass[39m=[32m&quot;form-check&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;input[39m
+                  [33mclass[39m=[32m&quot;form-check-input&quot;[39m
+                  [33mid[39m=[32m&quot;Hot fudge-toppings-checkbox&quot;[39m
+                  [33mtype[39m=[32m&quot;checkbox&quot;[39m
+                [36m/&gt;[39m
+                [36m&lt;label[39m
+                  [33mclass[39m=[32m&quot;form-check-label&quot;[39m
+                  [33mfor[39m=[32m&quot;Hot fudge-toppings-checkbox&quot;[39m
+                  [33mtitle[39m=[32m&quot;&quot;[39m
+                [36m&gt;[39m
+                  [0mHot fudge[0m
+                [36m&lt;/label&gt;[39m
+              [36m&lt;/div&gt;[39m
+            [36m&lt;/div&gt;[39m
+          [36m&lt;/div&gt;[39m
+        [36m&lt;/div&gt;[39m
+        [36m&lt;h2&gt;[39m
+          [0mGrand total: [0m
+          [0m$0.00[0m
+          [0m [0m
+        [36m&lt;/h2&gt;[39m
+        [36m&lt;button[39m
+          [33mclass[39m=[32m&quot;btn btn-primary&quot;[39m
+          [33mdisabled[39m=[32m&quot;&quot;[39m
+          [33mtype[39m=[32m&quot;button&quot;[39m
+        [36m&gt;[39m
+          [0mOrder Sundae![0m
+        [36m&lt;/button&gt;[39m
+      [36m&lt;/div&gt;[39m
+    [36m&lt;/div&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/body&gt;[39m
+heading:
+
+Name &quot;Scoops&quot;:
+[36m&lt;h2 /&gt;[39m
+
+Name &quot;Toppings&quot;:
+[36m&lt;h2 /&gt;[39m
+
+Name &quot;Grand total: $0.00&quot;:
+[36m&lt;h2 /&gt;[39m
+
+--------------------------------------------------
+img:
+
+Name &quot;Chocolate scoop&quot;:
+[36m&lt;img[39m
+  [33malt[39m=[32m&quot;Chocolate scoop&quot;[39m
+  [33msrc[39m=[32m&quot;http://localhost:3030//images/chocolate.png&quot;[39m
+  [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+[36m/&gt;[39m
+
+Name &quot;Vanilla scoop&quot;:
+[36m&lt;img[39m
+  [33malt[39m=[32m&quot;Vanilla scoop&quot;[39m
+  [33msrc[39m=[32m&quot;http://localhost:3030//images/vanilla.png&quot;[39m
+  [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+[36m/&gt;[39m
+
+Name &quot;Cherries topping&quot;:
+[36m&lt;img[39m
+  [33malt[39m=[32m&quot;Cherries topping&quot;[39m
+  [33msrc[39m=[32m&quot;http://localhost:3030//images/cherries.png&quot;[39m
+  [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+[36m/&gt;[39m
+
+Name &quot;M&amp;Ms topping&quot;:
+[36m&lt;img[39m
+  [33malt[39m=[32m&quot;M&amp;Ms topping&quot;[39m
+  [33msrc[39m=[32m&quot;http://localhost:3030//images/m-and-ms.png&quot;[39m
+  [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+[36m/&gt;[39m
+
+Name &quot;Hot fudge topping&quot;:
+[36m&lt;img[39m
+  [33malt[39m=[32m&quot;Hot fudge topping&quot;[39m
+  [33msrc[39m=[32m&quot;http://localhost:3030//images/hot-fudge.png&quot;[39m
+  [33mstyle[39m=[32m&quot;width: 75%;&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+spinbutton:
+
+Name &quot;Chocolate&quot;:
+[36m&lt;input[39m
+  [33mclass[39m=[32m&quot;form-control&quot;[39m
+  [33mid[39m=[32m&quot;Chocolate-count&quot;[39m
+  [33mtype[39m=[32m&quot;number&quot;[39m
+  [33mvalue[39m=[32m&quot;0&quot;[39m
+[36m/&gt;[39m
+
+Name &quot;Vanilla&quot;:
+[36m&lt;input[39m
+  [33mclass[39m=[32m&quot;form-control&quot;[39m
+  [33mid[39m=[32m&quot;Vanilla-count&quot;[39m
+  [33mtype[39m=[32m&quot;number&quot;[39m
+  [33mvalue[39m=[32m&quot;0&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+checkbox:
+
+Name &quot;Cherries&quot;:
+[36m&lt;input[39m
+  [33mclass[39m=[32m&quot;form-check-input&quot;[39m
+  [33mid[39m=[32m&quot;Cherries-toppings-checkbox&quot;[39m
+  [33mtype[39m=[32m&quot;checkbox&quot;[39m
+[36m/&gt;[39m
+
+Name &quot;M&amp;Ms&quot;:
+[36m&lt;input[39m
+  [33mclass[39m=[32m&quot;form-check-input&quot;[39m
+  [33mid[39m=[32m&quot;M&amp;Ms-toppings-checkbox&quot;[39m
+  [33mtype[39m=[32m&quot;checkbox&quot;[39m
+[36m/&gt;[39m
+
+Name &quot;Hot fudge&quot;:
+[36m&lt;input[39m
+  [33mclass[39m=[32m&quot;form-check-input&quot;[39m
+  [33mid[39m=[32m&quot;Hot fudge-toppings-checkbox&quot;[39m
+  [33mtype[39m=[32m&quot;checkbox&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+button:
+
+Name &quot;Order Sundae!&quot;:
+[36m&lt;button[39m
+  [33mclass[39m=[32m&quot;btn btn-primary&quot;[39m
+  [33mdisabled[39m=[32m&quot;&quot;[39m
+  [33mtype[39m=[32m&quot;button&quot;[39m
+[36m/&gt;[39m
+
+--------------------------------------------------
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/vitest/phases/orderPhase.test.jsx" name="If any toopings is selected, toppings seccion no render in OrderSummary Page" time="0.314">
+            <system-out>
+[36m&lt;body&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;div[39m
+      [33mclass[39m=[32m&quot;container&quot;[39m
+    [36m&gt;[39m
+      [36m&lt;div&gt;[39m
+        [36m&lt;h1&gt;[39m
+          [0mOrderSummary[0m
+        [36m&lt;/h1&gt;[39m
+        [36m&lt;h2&gt;[39m
+          [0mScoops: [0m
+          [0m$6.00[0m
+        [36m&lt;/h2&gt;[39m
+        [36m&lt;ul /&gt;[39m
+        [36m&lt;h2&gt;[39m
+          [0mGrand total: [0m
+          [0m$6.00[0m
+          [0m [0m
+        [36m&lt;/h2&gt;[39m
+        [36m&lt;form[39m
+          [33mclass[39m=[32m&quot;&quot;[39m
+        [36m&gt;[39m
+          [36m&lt;div&gt;[39m
+            [36m&lt;div[39m
+              [33mclass[39m=[32m&quot;form-check&quot;[39m
+            [36m&gt;[39m
+              [36m&lt;input[39m
+                [33mclass[39m=[32m&quot;form-check-input&quot;[39m
+                [33mid[39m=[32m&quot;terms-and-conditions&quot;[39m
+                [33mtype[39m=[32m&quot;checkbox&quot;[39m
+              [36m/&gt;[39m
+              [36m&lt;label[39m
+                [33mclass[39m=[32m&quot;form-check-label&quot;[39m
+                [33mfor[39m=[32m&quot;terms-and-conditions&quot;[39m
+                [33mtitle[39m=[32m&quot;&quot;[39m
+              [36m&gt;[39m
+                [36m&lt;span&gt;[39m
+                  [0mI agree to[0m
+                  [36m&lt;span[39m
+                    [33mstyle[39m=[32m&quot;color: blue;&quot;[39m
+                  [36m&gt;[39m
+                    [0m Terms and Conditions[0m
+                  [36m&lt;/span&gt;[39m
+                [36m&lt;/span&gt;[39m
+              [36m&lt;/label&gt;[39m
+            [36m&lt;/div&gt;[39m
+          [36m&lt;/div&gt;[39m
+          [36m&lt;button[39m
+            [33mclass[39m=[32m&quot;btn btn-primary&quot;[39m
+            [33mdisabled[39m=[32m&quot;&quot;[39m
+            [33mtype[39m=[32m&quot;submit&quot;[39m
+          [36m&gt;[39m
+            [0mConfirm Order[0m
+          [36m&lt;/button&gt;[39m
+        [36m&lt;/form&gt;[39m
+      [36m&lt;/div&gt;[39m
+    [36m&lt;/div&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/body&gt;[39m
+
+            </system-out>
+        </testcase>
+    </testsuite>
+</testsuites>

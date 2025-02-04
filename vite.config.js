@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import playwrightConfig from "./playwright.config";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,5 +19,7 @@ export default defineConfig({
     css: true,
     reporters: ["junit"],
     outputFile: "./vitest-results/junit-report.xml",
+    //exclude: ["./e2e/example.spec.js"],
+    include: ["./src/**/*.test.jsx"],
   },
 });
