@@ -20,35 +20,57 @@ pipeline {
                 '''
             }
         }
-        stage('Test') {
-            agent {
-                docker {
-                    image 'node:18-alpine3.20'
-                    reuseNode true
+        stage('Run Test') {
+
+            parallel {
+                 stage('Test') {
+                    agent {
+                        docker {
+                            image 'node:18-alpine3.20'
+                            reuseNode true
+                        }
+                    }
+                    steps {
+                        sh '''
+                            npm test
+                        '''
+                    }
+                }
+
+                stage('E2E') {
+                    agent {
+                        docker {
+                            image 'mcr.microsoft.com/playwright:v1.50.1-jammy'
+                            reuseNode true
+                        }
+                    }
+                    steps {
+                        sh '''
+                            npm i serve
+                            node_modules/.bin/serve dist &
+                            sleep 10
+                            npx playwright test
+                        '''
+                    }
                 }
             }
-            steps {
-                sh '''
-                    npm test
-                '''
-            }
         }
-        stage('E2E') {
-            agent {
-                docker {
-                    image 'mcr.microsoft.com/playwright:v1.50.1-jammy'
-                    reuseNode true
+
+        stage('Deploy') {
+                    agent {
+                        docker {
+                            image 'node:18-alpine3.20'
+                            reuseNode true
+                        }
+                    }
+                    steps {
+                        sh '''
+                            npm i netlify-cli
+                            node_modules/.bin/netlify -version
+
+                        '''
+                    }
                 }
-            }
-            steps {
-                sh '''
-                    npm i serve
-                    node_modules/.bin/serve dist &
-                    sleep 10
-                    npx playwright test
-                '''
-            }
-        }
     }
     post {
         always {
